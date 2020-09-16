@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".TestActivity"
+    android:gravity="center">
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+
+        <RadioButton
+            android:id="@+id/radioClientRecord"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="MIC RECORD IN CLIENT"
+            android:layout_marginTop="10dp"
+            android:checked="false"
+            android:textSize="20dp" />
+
+        <RadioButton
+            android:id="@+id/radioSCSRecord"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="MIC RECORD IN SCS"
+            android:layout_marginTop="20dp"
+            android:checked="false"
+            android:textSize="20dp" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/buttonStartRecord"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Start Recording"
+        android:onClick="startRecording"
+        />
+
+    <Button
+        android:id="@+id/buttonStopRecord"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Stop Recording"
+        android:onClick="stopRecording"/>
+</LinearLayout>
